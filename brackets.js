@@ -5,6 +5,7 @@ function bracketsGen(cur, open, closed, n) {
 			console.log(cur);
 		return
 	}
+
 	bracketsGen(cur + '(', open + 1, closed, n);
 
 	if (closed < open)
@@ -12,7 +13,7 @@ function bracketsGen(cur, open, closed, n) {
 
 }
 
-console.log(bracketsGen('', 0, 0, 1));
+bracketsGen('', 0, 0, 1);
 
 	// 0 ''
 	// 1 ()
